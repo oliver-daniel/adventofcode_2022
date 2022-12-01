@@ -1,0 +1,23 @@
+#! /usr/bin/sh
+touch in/$1.txt
+touch in/$1.test.txt
+
+if [ -z $1 ]; then exit 1; fi
+
+cat > ./$1.py << EOF
+# N = [line.strip() for line in open('./in/$1.txt').readlines()]
+N = [line.strip() for line in open('./in/$1.test.txt').readlines()]
+
+def part_1():
+    pass
+
+def part_2():
+    pass
+
+if __name__ == '__main__':
+    print('--- Part 1 ---')
+    print(part_1())
+    print('\n--- Part 2 ---')
+    print(part_2())
+
+EOF

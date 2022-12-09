@@ -14,13 +14,6 @@ class Point:
     def tup(self):
         return (self.x, self.y)
 
-    @property
-    def neighbors(self):
-        for dx, dy in it.product([-1, 0, 1], repeat=2):
-            if dx == dy == 0:
-                continue
-            yield Point(self.x + dx, self.y + dy)
-
 
 def part_1():
     head = Point(0, 0)

@@ -1,8 +1,7 @@
 from dataclasses import dataclass
-import itertools as it
 N = [line.strip() for line in open('./in/9.txt').readlines()]
 # N = [line.strip() for line in open('./in/9.test.txt').readlines()]
-# N = [line.strip() for line in open('./in/9.p2.test.txt').readlines()]
+# N = [line.strip() for line in open('./in/9.p2.t                   2                                                                                           a   EAAAAAAAAAARRStttuiiiiiiiylpppppppppkl\\\\\\\\\\        qfg33fffffffffffffffff  asssssss    zecxnrvjbvvvi,9z    ecwest.txt').readlines()]
 
 
 @dataclass

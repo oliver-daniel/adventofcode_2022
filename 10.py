@@ -34,7 +34,7 @@ def part_2():
 
     for cyc, x in cycle():
         col = (cyc - 1) % 40
-        screen[cyc - 1] = x in [col - 1, col, col + 1]
+        screen[cyc - 1] = abs(x - col) <= 1
 
         if cyc % 240 == 239: break
     
